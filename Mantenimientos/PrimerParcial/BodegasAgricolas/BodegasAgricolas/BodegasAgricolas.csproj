@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1E3E6B8C-DDE8-4C05-A1B9-D53803B19689}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BodegasAgricolas</RootNamespace>
+    <AssemblyName>BodegasAgricolas</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Clases\Conexion.cs" />
+    <Compile Include="Mantenimientos\Bodega\AEBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Bodega\AEBodega.Designer.cs">
+      <DependentUpon>AEBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Bodega\BuscarBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Bodega\BuscarBodega.Designer.cs">
+      <DependentUpon>BuscarBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Bodega\IngresoBodega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Bodega\IngresoBodega.Designer.cs">
+      <DependentUpon>IngresoBodega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\AECargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\AECargo.Designer.cs">
+      <DependentUpon>AECargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\BuscarCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\BuscarCargo.Designer.cs">
+      <DependentUpon>BuscarCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\IngresoCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cargo\IngresoCargo.Designer.cs">
+      <DependentUpon>IngresoCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\AECategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\AECategoria.Designer.cs">
+      <DependentUpon>AECategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\BuscarCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\BuscarCategoria.Designer.cs">
+      <DependentUpon>BuscarCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\IngresoCategoria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Categoria\IngresoCategoria.Designer.cs">
+      <DependentUpon>IngresoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\AECliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\AECliente.Designer.cs">
+      <DependentUpon>AECliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\BuscarCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\BuscarCliente.Designer.cs">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\IngresoCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Cliente\IngresoCliente.Designer.cs">
+      <DependentUpon>IngresoCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\AEEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\AEEmpleado.Designer.cs">
+      <DependentUpon>AEEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\BuscarEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\BuscarEmpleado.Designer.cs">
+      <DependentUpon>BuscarEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\IngresoEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Empleado\IngresoEmpleado.Designer.cs">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\AEProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\AEProducto.Designer.cs">
+      <DependentUpon>AEProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\BuscarProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\BuscarProducto.Designer.cs">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\IngresoProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Producto\IngresoProducto.Designer.cs">
+      <DependentUpon>IngresoProducto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\AEProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\AEProveedor.Designer.cs">
+      <DependentUpon>AEProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\BuscarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\BuscarProveedor.Designer.cs">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\IngresoProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mantenimientos\Proveedor\IngresoProveedor.Designer.cs">
+      <DependentUpon>IngresoProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MDIFormulario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MDIFormulario.Designer.cs">
+      <DependentUpon>MDIFormulario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Mantenimientos\Bodega\AEBodega.resx">
+      <DependentUpon>AEBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Bodega\BuscarBodega.resx">
+      <DependentUpon>BuscarBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Bodega\IngresoBodega.resx">
+      <DependentUpon>IngresoBodega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cargo\AECargo.resx">
+      <DependentUpon>AECargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cargo\BuscarCargo.resx">
+      <DependentUpon>BuscarCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cargo\IngresoCargo.resx">
+      <DependentUpon>IngresoCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Categoria\AECategoria.resx">
+      <DependentUpon>AECategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Categoria\BuscarCategoria.resx">
+      <DependentUpon>BuscarCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Categoria\IngresoCategoria.resx">
+      <DependentUpon>IngresoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cliente\AECliente.resx">
+      <DependentUpon>AECliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cliente\BuscarCliente.resx">
+      <DependentUpon>BuscarCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Cliente\IngresoCliente.resx">
+      <DependentUpon>IngresoCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Empleado\AEEmpleado.resx">
+      <DependentUpon>AEEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Empleado\BuscarEmpleado.resx">
+      <DependentUpon>BuscarEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Empleado\IngresoEmpleado.resx">
+      <DependentUpon>IngresoEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Producto\AEProducto.resx">
+      <DependentUpon>AEProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Producto\BuscarProducto.resx">
+      <DependentUpon>BuscarProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Producto\IngresoProducto.resx">
+      <DependentUpon>IngresoProducto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Proveedor\AEProveedor.resx">
+      <DependentUpon>AEProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Proveedor\BuscarProveedor.resx">
+      <DependentUpon>BuscarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mantenimientos\Proveedor\IngresoProveedor.resx">
+      <DependentUpon>IngresoProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MDIFormulario.resx">
+      <DependentUpon>MDIFormulario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
